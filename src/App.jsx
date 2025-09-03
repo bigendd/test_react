@@ -27,7 +27,7 @@ function App() {
       <Navigation />
       <Routes>
         <Route path="/" element={<PostsPage posts={allPosts} loading={loading} />} />
-        <Route path="/post/:id" element={<PostDetailPage />} />
+          <Route path="/post/:id" element={<PostDetailPage posts={allPosts} />} />
         <Route path="/create" element={<CreatePostPage setCrePosts={setCrePosts} />} />
       </Routes>
     </Router>
